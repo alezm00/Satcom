@@ -1,7 +1,8 @@
 # SATCOM
 <div align="center">
-[![Steam - Workshop](https://img.shields.io/badge/Steam-Workshop-1A2D3E?logo=Steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=3670774478)
+![Steam Downloads](https://img.shields.io/steam/downloads/https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fid%3D3670774478)
 </div>
 
 
 [ GITHUB ](https://github.com/alezm00/Miclic)
+
