@@ -1,11 +1,11 @@
-name = "[AZM/9GU] SatCom";
+name = "[AZM-9GU] SatCom";
 picture = "";
 actionName = "Website";
 action = "https://github.com/alezm00/Satcom";
 description = "";
 logo = "";
 logoOver = "";
-tooltip = "[AZM/9GU] SatCom";
+tooltip = "[AZM-9GU] SatCom";
 tooltipOwned = "";
 overview = "mhhh wonder what this is";
 author = "Alezm";

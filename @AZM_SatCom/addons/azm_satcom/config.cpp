@@ -1,7 +1,7 @@
 class CfgPatches {
     class azm_satcom {
         author = "Alezm";
-        name = "[AZM/9GU] SatCom for ACRE2";
+        name = "[AZM-9GU] SatCom for ACRE2";
         url = "";
         units[] = {};
         weapons[] = {"ACRE_GEN_SatCom"};
@@ -12,16 +12,12 @@ class CfgPatches {
         authors[] = {"Alezm"};
     };
 };
-
-
-class CfgEditorSubcategories
-{
-	class gen_cat_acre // Category class, you point to it in editorSubcategory property
+class CfgEditorCategories {
+	class azm_satcom // Category class, you point to it in editorCategory property
 	{
-		displayName = "ACRE"; // Name visible in the list
+		displayName = "[AZM-9GU] SatCom for ACRE2"; // Name visible in the list
 	};
 };
-
 
 
 

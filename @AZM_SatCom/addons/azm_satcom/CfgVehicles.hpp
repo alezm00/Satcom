@@ -6,7 +6,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ACE_Equipment {
                 class acre_gen_sys_placeSatCom {
-                    displayName = "Place 9GU-SatCom";
+                    displayName = "Place SatCom";
                     condition = "[_player, 'ACRE_GEN_SatCom'] call acre_sys_core_fnc_hasItem";
                     statement = "[_player] call acre_gen_SatCom_sys_gsa_fnc_deploy";
                     showDisabled = 0;
@@ -26,14 +26,14 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "{9GU} SatCom ACRE";
+        displayName = "[AZM-9GU] SatCom ACRE";
         model = "\A3\Props_F_Enoch\Military\Camps\SatelliteAntenna_01_F.p3d";
         icon = "iconObject_5x4";
         editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Land_SatelliteAntenna_01_F.jpg";
         vehicleClass = "Items";
 
-        editorCategory = "gen_cat"; // Class from CfgEditorCategories. Usually used for props.
-        editorSubcategory = "gen_cat_acre"; // Class from CfgEditorSubcategories. Should be used everywhere.
+        editorCategory = "azm_satcom"; // Class from CfgEditorCategories. Usually used for props.
+        //editorSubcategory = "gen_cat_acre"; // Class from CfgEditorSubcategories. Should be used everywhere.
 
         class AcreComponents {
             componentName = "ACRE_GEN_km_VHF_TNC";

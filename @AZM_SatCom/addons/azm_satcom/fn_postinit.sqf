@@ -32,18 +32,19 @@ acre_gen_SatCom_sys_gsa_fnc_deploy = {
 
         private _direction = getDir _unit;
         private _zOffset = 0.0;
-
         private _position = getPosASL _unit vectorAdd [2 * sin _direction, 2 * cos _direction, 0];
 
-
-
         private _vectorUp = [0, 0, 1];
-        private _intersections = lineIntersectsSurfaces [_position vectorAdd [0, 0, 1.5], _position vectorDiff [0, 0, 1.5], _unit, objNull, true, 1, "GEOM", "FIRE"];
-        if (_intersections isEqualTo []) then {
-            ;
-        } else {
-            (_intersections select 0) params ["_touchingPoint", ""];
+        private _intersections = lineIntersectsSurfaces [
+            _position vectorAdd [0, 0, 1.5],
+            _position vectorDiff [0, 0, 1.5],
+            _unit, objNull, true, 1, "GEOM", "FIRE"
+        ];
+
+        if !(_intersections isEqualTo []) then {
+            (_intersections select 0) params ["_touchingPoint", "_surfaceNormal"];
             _position = _touchingPoint vectorAdd [0, 0, _zOffset];
+            _vectorUp = _surfaceNormal;
         };
 
         private _gsaUnit = _gsa createVehicle [0, 0, 0];

@@ -17,8 +17,8 @@ class CfgAcreComponents {
 
 
     class ACRE_GEN_km_VHF_TNC: ACRE_BaseAntenna {
-        name = "{9GU} SatCom ACRE";
-        shortName = "9GU SatCom ACRE";
+        name = "[AZM-9GU] SatCom ACRE";
+        shortName = "[AZM-9GU] SatCom ACRE";
         connector = 1;
         height = 5000;
         binaryGainFile = "\idi\acre\addons\sys_antenna\binary\groundspike_2430cm_mast_gain.aba";
